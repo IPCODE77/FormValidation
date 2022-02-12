@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Formvalidnation project</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Formvalidnation</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                </ul>
+             
+            </div>
+        </div>
+    </nav>
+    <div id="success"></div>
+      <div id="failed"></div>
+
+    <div class="container">
+        <h2>Form Validnation</h2>
+        <form>
+            <div class="form-group">
+                <label for="name" class="form-label">Enter Name</label>
+                <input type="text" class="form-control  " id="name" placeholder="Enter your name" value=""  required>
+                <div class="invalid-feedback">
+                    User name must be 2-15 character and not start with number or any special character
+                  </div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Enter email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                <div class="invalid-feedback">
+                    Example- name@example.com
+                  </div>
+            </div>
+            <div class="form-group">
+                <label for="phone">Enter phone number</label>
+                <input name="phone" class="form-control" id="phone" placeholder="Enter your phone number">
+                <div class="invalid-feedback">
+                    Phone number must be 10 number
+                  </div>
+            </div>
+            <div class="form-group">
+                <label for="pin">Enter pincode</label>
+                <input type="text" name="pin" class="form-control" id="pin" placeholder="Enter your pin code">
+                <div class="invalid-feedback">
+                    Pin code must be 6 number
+                  </div>
+            </div>
+            <div class="form-group my-2">
+                <label for="car">Select car </label>
+                <select class="form-select" multiple aria-label="multiple select example" id="car">
+
+                    <option value="">Audi</option>
+                    <option value="">Bmw</option>
+                    <option value="">Mahindra Thar</option>
+                    <option value="">Jeep</option>
+                    <option value="">Mercedes</option>
+                    <option class="vehicle-search" value="0">Make</option>
+                    <option class="vehicle-search" value="1">BMW</option>
+                    <option class="vehicle-search" value="2">Daewoo</option>
+                    <option class="vehicle-search" value="3">Ford</option>
+                    <option class="vehicle-search" value="4">Holden</option>
+                    <option class="vehicle-search" value="5">Honda</option>
+                    <option class="vehicle-search" value="6">Hyundai</option>
+                    <option class="vehicle-search" value="7">Isuzu</option>
+                    <option class="vehicle-search" value="8">Kia</option>
+                    <option class="vehicle-search" value="9">Lexus</option>
+                    <option class="vehicle-search" value="10">Mazda</option>
+                    <option class="vehicle-search" value="11">Mitsubishi</option>
+                    <option class="vehicle-search" value="12">Nissan</option>
+                    <option class="vehicle-search" value="13">Peugeot</option>
+                    <option class="vehicle-search" value="14">Subaru</option>
+                    <option class="vehicle-search" value="15">Suzuki</option>
+                    <option class="vehicle-search" value="16">Toyota</option>
+                    <option class="vehicle-search" value="17">Volkswagen</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="address" class="form-label">Enter Address</label>
+                <textarea class="form-control" id="address" rows="3"></textarea>
+                <button id="submit" class="btn btn-primary my-2">submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
